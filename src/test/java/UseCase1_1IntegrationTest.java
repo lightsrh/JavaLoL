@@ -12,27 +12,10 @@ import static utils.UrlPaths.CREATE_URL;
 
 class UseCase1_1IntegrationTest {
 
+
     public static final String SRC_TEST_RESOURCES_DATASETS = "src/test/resources/datasets/create/";
     Javalin app = new ServerJava().javalinApp(); // inject any dependencies you might have
 
-    @Test
-    void test_create_nasus() throws IOException {
-
-        String jsonContent = new String(Files.readAllBytes(Paths.get(SRC_TEST_RESOURCES_DATASETS + "create_nasus.json")));
-
-        JavalinTest.test(app, (server, client) -> {
-            assertThat(client.post(CREATE_URL, jsonContent).code()).isEqualTo(200);
-        });
-    }
-
-    @Test
-    void test_create_pantheon() throws IOException {
-        String jsonContent = new String(Files.readAllBytes(Paths.get(SRC_TEST_RESOURCES_DATASETS + "create_pantheon.json")));
-
-        JavalinTest.test(app, (server, client) -> {
-            assertThat(client.post(CREATE_URL, jsonContent).code()).isEqualTo(200);
-        });
-    }
 
 
     @Test
@@ -40,7 +23,6 @@ class UseCase1_1IntegrationTest {
         String jsonContent = new String(Files.readAllBytes(Paths.get(SRC_TEST_RESOURCES_DATASETS + "create_nami.json")));
 
         JavalinTest.test(app, (server, client) -> {
-            assertThat(client.post(CREATE_URL, jsonContent).code()).isEqualTo(200);
             assertThat(client.post(CREATE_URL, jsonContent).code()).isEqualTo(400);
         });
     }

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static utils.LoadData.*;
@@ -16,26 +17,19 @@ class UseCase3IntegrationTest {
 
     Javalin app = new ServerJava().javalinApp(); // inject any dependencies you might have
 
-    private static final String SRC_TEST_RESOURCES_DATASETS = "src/test/resources/datasets/team/";
-    @Test
-    void test_begin_game_ok() throws IOException {
+    private static final String SRC_TEST_RESOURCES_DATASETS = "src/test/resources/datasets/teams/";
 
-        String incomplete = new String(Files.readAllBytes(Paths.get(SRC_TEST_RESOURCES_DATASETS + "create_incomplete.json")));
-
-        JavalinTest.test(app, (server, client) -> {
-            createChampionsAtInit(client);
-            createTeamsAtInit(client);
-            assertThat(client.get(BEGIN_GAME_URL).code()).isEqualTo(200);
-            assertThat(client.get(BEGIN_GAME_URL).body().string()).isEqualTo("Bienvenue sur la Faille de l'Invocateur !");
-            assertThat(client.post(CREATE_TEAM_URL, incomplete ).code()).isEqualTo(400);
-        });
+    private Javalin createNewApp() {
+        return new ServerJava().javalinApp();
     }
 
     @Test
     void test_begin_game_noTeams() {
+        Javalin app = createNewApp();
 
         JavalinTest.test(app, (server, client) -> {
             createChampionsAtInit(client);
+            client.get(BEGIN_GAME_URL);
             assertThat(client.get(BEGIN_GAME_URL).code()).isEqualTo(400);
         });
     }

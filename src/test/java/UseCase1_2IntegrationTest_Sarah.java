@@ -34,7 +34,7 @@ class UseCase1_2IntegrationTest_Sarah {
         String modifyChampionJson = new String(Files.readAllBytes(Paths.get("src/test/resources/datasets/modify_nonexistent_champ.json")));
 
         JavalinTest.test(app, (server, client) -> {
-            assertThat(client.post(MODIFY_URL, modifyChampionJson).code()).isEqualTo(400);
+            assertThat(client.post(MODIFY_URL, modifyChampionJson).code()).isEqualTo(404);
         });
     }
 }

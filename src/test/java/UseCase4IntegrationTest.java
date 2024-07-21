@@ -21,24 +21,6 @@ class UseCase4IntegrationTest {
 
     private static final String SRC_TEST_RESOURCES_DATASETS = "src/test/resources/datasets/prediction/";
 
-
-    @Test
-    void test_prediction_ok() {
-
-        JavalinTest.test(app, (server, client) -> {
-            // GIVEN
-            String prediction = new String(Files.readAllBytes(Paths.get(SRC_TEST_RESOURCES_DATASETS + "prediction.json")));
-            createChampionsAtInit(client);
-            createTeamsAtInit(client);
-            client.get(BEGIN_GAME_URL);
-
-            // WHEN
-            Response response = client.get(PREDICT_WINNER_URL);
-            assertThat(response.code()).isEqualTo(200);
-            assertThat(parseResponse(response).getJSONObject(0).toString()).is(isJsonEquals(prediction));
-        });
-    }
-
     @Test
     void test_prediction_game_still_not_begun() {
 

@@ -1,6 +1,6 @@
 [{
   "championName": "Champ6",
-  "championType": "Tireur",
+  "championType": "TIREUR",
   "lifePoints": 115,
   "abilities": [
     {

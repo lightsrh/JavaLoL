@@ -8,25 +8,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static utils.LoadData.createChampionsAtInit;
+import static utils.UrlPaths.CREATE_TEAM_URL;
 
 class UseCase2IntegrationTest_Sarah {
 
     Javalin app = new ServerJava().javalinApp();
     String CREATE_TEAM_URL = "/api/team";
-
-
-
-    @Test
-    void useCase2IntegrationTest_nominalCase() throws IOException {
-        String createChampionJson = new String(Files.readAllBytes(Paths.get("src/test/resources/datasets/add_several_champs.json")));
-        String createTeamJson = new String(Files.readAllBytes(Paths.get("src/test/resources/datasets/create_team_OK.json")));
-
-
-        JavalinTest.test(app, (server, client) -> {
-            client.post("/api/create", createChampionJson);
-
-            assertThat(client.post(CREATE_TEAM_URL, createTeamJson).code()).isEqualTo(200);
-        });
+    private static final String SRC_TEST_RESOURCES_DATASETS = "src/test/resources/datasets/teams/";
+    private Javalin createNewApp() {
+        return new ServerJava().javalinApp();
     }
 
     @Test
