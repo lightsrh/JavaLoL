@@ -1,0 +1,25 @@
+{
+  "teamName": "RED",
+  "championsDistribution": [
+    {
+      "championName": "Champ6",
+      "lane": "TOP"
+    },
+    {
+      "championName": "Champ7",
+      "lane": "BOT"
+    },
+    {
+      "championName": "Champ8",
+      "lane": "JUNGLER"
+    },
+    {
+      "championName": "Champ9",
+      "lane": "BOT"
+    },
+    {
+      "championName": "Unknow",
+      "lane": "MID"
+    }
+  ]
+}

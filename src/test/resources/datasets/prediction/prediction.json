@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "laneName": "TOP",
+      "winningTeam": "RED"
+    },
+    {
+      "name": "JUNGLER",
+      "winningTeam": "BLUE"
+    },
+    {
+      "name": "MID",
+      "winningTeam": "BLUE"
+    },
+    {
+      "name": "BOT",
+      "winningTeam": "RED"
+    }
+  ]
+}

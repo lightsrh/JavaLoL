@@ -1,0 +1,25 @@
+{
+  "teamName": "BLUE",
+  "championsDistribution": [
+    {
+      "championName": "Nasus",
+      "lane": "TOP"
+    },
+    {
+      "championName": "Nami",
+      "lane": "BOT"
+    },
+    {
+      "championName": "Pantheon",
+      "lane": "JUNGLER"
+    },
+    {
+      "championName": "Champ4",
+      "lane": "BOT"
+    },
+    {
+      "championName": "Champ5",
+      "lane": "MID"
+    }
+  ]
+}

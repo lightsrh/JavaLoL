@@ -1,0 +1,23 @@
+{
+  "teamName": "BLEU",
+  "championNames": [
+    {
+      "championName":  "Nasus"
+    },
+    {
+      "championName":  "Pantheon"
+    },
+    {
+      "championName":  "Nami"
+    },
+    {
+      "championName":  "Samira"
+    },
+    {
+      "championName":  "Syndra"
+    },
+    {
+      "championName":  "Ornn"
+    }
+  ]
+}

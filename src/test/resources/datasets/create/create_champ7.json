@@ -1,0 +1,11 @@
+[{
+  "championName": "Champ7",
+  "championType": "TIREUR",
+  "lifePoints": 130,
+  "abilities": [
+    {
+      "abilityName": "Sniper",
+      "damage": 75
+    }
+  ]
+}]

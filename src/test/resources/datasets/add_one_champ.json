@@ -1,0 +1,23 @@
+[{
+    "championName": "Darius",
+    "championType": "ASSASSIN",
+    "lifePoints": 120,
+    "abilities": [
+        {
+            "abilityName": "Bouncing Blade",
+            "damage": 70
+        },
+        {
+            "abilityName": "Preparation",
+            "damage": 0
+        },
+        {
+            "abilityName": "Shunpo",
+            "damage": 60
+        },
+        {
+            "abilityName": "Death Lotus",
+            "damage": 150
+        }
+    ]
+}]

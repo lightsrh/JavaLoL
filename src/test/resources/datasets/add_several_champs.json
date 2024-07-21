@@ -1,0 +1,112 @@
+[
+  {
+    "championName": "Nasus",
+    "championType": "COMBATTANT",
+    "lifePoints": 120,
+    "abilities": [
+      {
+        "abilityName": "Buveuse d'âme",
+        "damage": 30
+      }
+    ]
+  },
+  {
+    "championName": "Nami",
+    "championType": "SOUTIEN",
+    "lifePoints": 110,
+    "abilities": [
+      {
+        "abilityName": "Vague",
+        "damage": 20
+      }
+    ]
+  },
+  {
+    "championName": "Pantheon",
+    "championType": "COMBATTANT",
+    "lifePoints": 130,
+    "abilities": [
+      {
+        "abilityName": "Aegis of Zeonia",
+        "damage": 40
+      }
+    ]
+  },
+  {
+    "championName": "Samira",
+    "championType": "TIREUR",
+    "lifePoints": 100,
+    "abilities": [
+      {
+        "abilityName": "Flair",
+        "damage": 35
+      }
+    ]
+  },
+  {
+    "championName": "Syndra",
+    "championType": "MAGE",
+    "lifePoints": 105,
+    "abilities": [
+      {
+        "abilityName": "Sphère de l'Omnipotence",
+        "damage": 50
+      }
+    ]
+  },
+  {
+    "championName": "Jinx",
+    "championType": "TIREUR",
+    "lifePoints": 115,
+    "abilities": [
+      {
+        "abilityName": "Fête de Feu",
+        "damage": 45
+      }
+    ]
+  },
+  {
+    "championName": "Lee Sin",
+    "championType": "COMBATTANT",
+    "lifePoints": 140,
+    "abilities": [
+      {
+        "abilityName": "Coup de Pied du Dragon",
+        "damage": 55
+      }
+    ]
+  },
+  {
+    "championName": "Azir",
+    "championType": "MAGE",
+    "lifePoints": 120,
+    "abilities": [
+      {
+        "abilityName": "Sable des Empereurs",
+        "damage": 50
+      }
+    ]
+  },
+  {
+    "championName": "Gnar",
+    "championType": "COMBATTANT",
+    "lifePoints": 110,
+    "abilities": [
+      {
+        "abilityName": "Rage des Gnar",
+        "damage": 40
+      }
+    ]
+  },
+  {
+    "championName": "Thresh",
+    "championType": "SUPPORT",
+    "lifePoints": 130,
+    "abilities": [
+      {
+        "abilityName": "Chaîne de l'Agonie",
+        "damage": 30
+      }
+    ]
+  }
+]

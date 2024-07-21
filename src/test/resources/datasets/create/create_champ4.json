@@ -1,0 +1,11 @@
+[{
+  "championName": "Champ4",
+  "championType": "SUPPORT",
+  "lifePoints": 100,
+  "abilities": [
+    {
+      "abilityName": "attaque",
+      "damage": 20
+    }
+  ]
+}]

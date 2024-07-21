@@ -1,0 +1,11 @@
+[{
+  "championName": "Pantheon",
+  "championType": "COMBATTANT",
+  "lifePoints": 110,
+  "abilities": [
+    {
+      "abilityName": "coup de lance",
+      "damage": 30
+    }
+  ]
+}]

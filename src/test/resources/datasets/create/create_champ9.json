@@ -1,0 +1,11 @@
+[{
+  "championName": "Champ9",
+  "championType": "AUTRE",
+  "lifePoints": 150,
+  "abilities": [
+    {
+      "abilityName": "Peau de pierre",
+      "damage": 10
+    }
+  ]
+}]

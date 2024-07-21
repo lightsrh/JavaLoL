@@ -1,0 +1,25 @@
+{
+  "teamName": "RED",
+  "championsDistribution": [
+    {
+      "championName": "Gnar",
+      "lane": "TOP"
+    },
+    {
+      "championName": "Azir",
+      "lane": "MID"
+    },
+    {
+      "championName": "Jinx",
+      "lane": "BOT"
+    },
+    {
+      "championName": "Lee Sin",
+      "lane": "JUNGLER"
+    },
+    {
+      "championName": "Thresh",
+      "lane": "BOT"
+    }
+  ]
+}

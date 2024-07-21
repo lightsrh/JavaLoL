@@ -1,0 +1,11 @@
+[{
+  "championName": "champ5",
+  "championType": "ASSASSIN",
+  "lifePoints": 120,
+  "abilities": [
+    {
+      "abilityName": "coup de dague",
+      "damage": 45
+    }
+  ]
+}]

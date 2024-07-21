@@ -1,0 +1,9 @@
+{
+  "championName": "Nasus",
+  "abilities": [
+    {
+      "abilityName": "Vieillissement accéléré",
+      "damage": 5
+    }
+  ]
+}
